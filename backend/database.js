@@ -110,9 +110,9 @@ const readStudentInfo = async (id) => {
     const sql = `SELECT * FROM student WHERE id = ?`
     return new Promise((resolve, reject) => {
         knex_db
-            .raw(sql,[id])
-            .then((data) => {
-                resolve(data);
+            .raw(sql, [id])
+            .then((student) => {
+                resolve(student);
             })
             .catch((error) => {
                 reject(error);
