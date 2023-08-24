@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { AppServiceService } from 'src/app/app-service.service';
 
@@ -8,9 +8,9 @@ import { AppServiceService } from 'src/app/app-service.service';
   styleUrls: ['./add-new-student.component.css']
 })
 export class AddNewStudentComponent implements OnInit {
-
+  
   constructor(private service : AppServiceService, private router: Router) { }
-
+  
   ngOnInit(): void {
   }
 
